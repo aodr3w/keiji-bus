@@ -1,4 +1,4 @@
-module tcp-bus
+module github.com/aodr3w/tcp-bus
 
 go 1.22.1
 
