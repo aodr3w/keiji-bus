@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net"
-	"tcp-bus/bus"
 
+	"github.com/aodr3w/keiji-bus/bus"
 	"github.com/aodr3w/keiji-core/paths"
 	"github.com/aodr3w/keiji-core/utils"
 	"github.com/aodr3w/logger"
