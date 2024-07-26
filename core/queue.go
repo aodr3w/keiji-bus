@@ -1,4 +1,4 @@
-package bus
+package core
 
 type Message map[string]string
 

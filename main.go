@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/aodr3w/keiji-bus/bus"
+	"github.com/aodr3w/keiji-bus/core"
 	"github.com/aodr3w/keiji-core/paths"
 	"github.com/aodr3w/keiji-core/utils"
 	"github.com/aodr3w/logger"
@@ -43,27 +43,27 @@ func (s *Server) start(f func(net.Conn, *logger.Logger)) {
 }
 
 func main() {
-	mq := bus.NewMessageQueue(100)
+	mq := core.NewMessageQueue(100)
 	lg, err := logger.NewFileLogger(paths.TCP_BUS_LOGS)
 	if err != nil {
 		log.Fatal(err)
 	}
 	push := NewServer(
-		bus.PUSH_PORT,
+		core.PUSH_PORT,
 		lg,
 	)
 
 	pull := NewServer(
-		bus.PULL_PORT,
+		core.PULL_PORT,
 		lg,
 	)
 
 	go push.start(func(c net.Conn, l *logger.Logger) {
-		bus.HandlePush(mq, c, push.logger)
+		core.HandlePush(mq, c, push.logger)
 	})
 
 	go pull.start(func(c net.Conn, l *logger.Logger) {
-		bus.HandlePull(mq, c, pull.logger)
+		core.HandlePull(mq, c, pull.logger)
 	})
 
 	utils.HandleStopSignal(func() {
