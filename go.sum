@@ -1,4 +1,10 @@
 github.com/aodr3w/keiji-core v0.1.2 h1:ZYIKVK3so5Hoj+cngrEM5JsdrFp2iow8twOxpVqtBv4=
 github.com/aodr3w/keiji-core v0.1.2/go.mod h1:lE+6eENnOK1EdYERNgobd/UjSH9uhDgjEn68bVw+NRo=
+github.com/aodr3w/keiji-core v0.1.4 h1:d3CRoJISjJAWmsJDrAYdrZzOfgazP24RMa8gdpJeIjw=
+github.com/aodr3w/keiji-core v0.1.4/go.mod h1:loNx28ignXX53QvCZP+RueqjzMMVLnyu5+JgwpfJWmI=
 github.com/aodr3w/logger v0.1.0 h1:F+mrWWfzBTPbTCKf8258dFi3lmIK2s2ETtqUIxHv96k=
 github.com/aodr3w/logger v0.1.0/go.mod h1:DT4Tj2GLcyqSDJ4tGbKJk9Df0WA2EJ8wUlP1FJ+YFqE=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
+github.com/logrusorgru/aurora v2.0.3+incompatible h1:tOpm7WcpBTn4fjmVfgpQq0EfczGlG91VSDkswnjF5A8=
+github.com/logrusorgru/aurora v2.0.3+incompatible/go.mod h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=
