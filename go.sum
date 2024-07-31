@@ -1,7 +1,7 @@
-github.com/aodr3w/keiji-core v0.1.10 h1:WNYBzI/G8XX8PuS4eprY4ePMyhInI3ZsB2vYx6r7B/0=
-github.com/aodr3w/keiji-core v0.1.10/go.mod h1:zA88dQucKpxRnOV5X1M0AhVgeACm4mkC0eEKifwl74s=
-github.com/aodr3w/logger v0.1.0 h1:F+mrWWfzBTPbTCKf8258dFi3lmIK2s2ETtqUIxHv96k=
-github.com/aodr3w/logger v0.1.0/go.mod h1:DT4Tj2GLcyqSDJ4tGbKJk9Df0WA2EJ8wUlP1FJ+YFqE=
+github.com/aodr3w/keiji-core v0.0.0-20240731121012-a214d4343fe6 h1:9khqinqgrJpg39HmVpblPTf/y8M469W3l7AKLQRGeGs=
+github.com/aodr3w/keiji-core v0.0.0-20240731121012-a214d4343fe6/go.mod h1:u01TGWbYft1bM8eAhAUjMBr7ZNRmU6VyYY9vwb2ba6Y=
+github.com/aodr3w/logger v0.0.0-20240718094903-5071dde6db05 h1:9Kc7Be+L8z1v3PeWbcmsVGQ1zvszmv1q58D8l1dh0Bs=
+github.com/aodr3w/logger v0.0.0-20240718094903-5071dde6db05/go.mod h1:DT4Tj2GLcyqSDJ4tGbKJk9Df0WA2EJ8wUlP1FJ+YFqE=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 github.com/logrusorgru/aurora v2.0.3+incompatible h1:tOpm7WcpBTn4fjmVfgpQq0EfczGlG91VSDkswnjF5A8=
