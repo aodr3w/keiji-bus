@@ -5,17 +5,17 @@ import (
 	"net"
 
 	"github.com/aodr3w/keiji-bus/core"
+	"github.com/aodr3w/keiji-core/logging"
 	"github.com/aodr3w/keiji-core/paths"
 	"github.com/aodr3w/keiji-core/utils"
-	"github.com/aodr3w/logger"
 )
 
 type Server struct {
 	address string
-	logger  *logger.Logger
+	logger  *logging.Logger
 }
 
-func NewServer(address string, logger *logger.Logger) *Server {
+func NewServer(address string, logger *logging.Logger) *Server {
 
 	return &Server{
 		address: address,
@@ -23,7 +23,7 @@ func NewServer(address string, logger *logger.Logger) *Server {
 	}
 }
 
-func (s *Server) start(f func(net.Conn, *logger.Logger)) {
+func (s *Server) start(f func(net.Conn, *logging.Logger)) {
 	listener, err := net.Listen("tcp", s.address)
 	if err != nil {
 		s.logger.Fatal("Failed to start server: %v", err)
@@ -44,7 +44,7 @@ func (s *Server) start(f func(net.Conn, *logger.Logger)) {
 
 func main() {
 	mq := core.NewMessageQueue(100)
-	lg, err := logger.NewFileLogger(paths.TCP_BUS_LOGS)
+	lg, err := logging.NewFileLogger(paths.TCP_BUS_LOGS)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -58,11 +58,11 @@ func main() {
 		lg,
 	)
 
-	go push.start(func(c net.Conn, l *logger.Logger) {
+	go push.start(func(c net.Conn, l *logging.Logger) {
 		core.HandlePush(mq, c, push.logger)
 	})
 
-	go pull.start(func(c net.Conn, l *logger.Logger) {
+	go pull.start(func(c net.Conn, l *logging.Logger) {
 		core.HandlePull(mq, c, pull.logger)
 	})
 

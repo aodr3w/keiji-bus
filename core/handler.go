@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/aodr3w/logger"
+	"github.com/aodr3w/keiji-core/logging"
 )
 
 const (
@@ -25,7 +25,7 @@ func errorResp(msg string) string {
 	return fmt.Sprintf("ERROR: %v", msg)
 }
 
-func HandlePush(mq *MessageQueue, conn net.Conn, logger *logger.Logger) {
+func HandlePush(mq *MessageQueue, conn net.Conn, logger *logging.Logger) {
 	defer conn.Close()
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
@@ -50,7 +50,7 @@ func HandlePush(mq *MessageQueue, conn net.Conn, logger *logger.Logger) {
 	}
 }
 
-func HandlePull(mq *MessageQueue, conn net.Conn, logger *logger.Logger) {
+func HandlePull(mq *MessageQueue, conn net.Conn, logger *logging.Logger) {
 	defer conn.Close()
 	message := mq.Pull()
 	msgBytes, err := json.Marshal(message)
