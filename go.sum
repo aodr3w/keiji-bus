@@ -1,5 +1,5 @@
-github.com/aodr3w/keiji-core v0.0.0-20240807081309-c632afa2cd26 h1:FCnijoFD9WLrqJkmXZ9Yg5k+cVms1eeH/zE3ohClu7M=
-github.com/aodr3w/keiji-core v0.0.0-20240807081309-c632afa2cd26/go.mod h1:7tvGeJldmZ1epqi1J7FG5qF3lztR87abWY9HweujYAM=
+github.com/aodr3w/keiji-core v0.2.0 h1:yAJUqOcatKdQUQo+4ZOo3CPVcoALkrmT6Jdq3eX/cyI=
+github.com/aodr3w/keiji-core v0.2.0/go.mod h1:jj8xSUYjx8i2bbkZ3HovyhFO6rMKW0EM2L6v3EFrMrs=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 github.com/logrusorgru/aurora v2.0.3+incompatible h1:tOpm7WcpBTn4fjmVfgpQq0EfczGlG91VSDkswnjF5A8=
