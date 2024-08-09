@@ -30,7 +30,7 @@ The message queue in keiji-bus is implemented as a buffered channel:
 
 ## Usage
 
-`keiji bus`
+**command**: `keiji-bus`
 
 you should see the following message in the terminal:
 
