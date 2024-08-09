@@ -87,3 +87,5 @@ keiji-bus enables interprocess communication in the keiji task scheduling system
 
 ## License
 keiji-bus is open-source software licensed under the MIT License. See the LICENSE file for more details.
+
+https://github.com/aodr3w/keiji-bus/blob/main/LICENSE
