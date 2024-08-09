@@ -1,6 +1,6 @@
 # KEIJI-BUS
 
-# about
+## about
 
 - Keiji-Bus is a message bus that forms a critical component of the Keiji task scheduling system. It provides a TCP-based server that handles message queuing and processing through a buffered channel.
 
@@ -45,6 +45,8 @@ you should see the following message in the terminal:
 
 - `send`
 
+- after starting the keiji-bus process, open another terminal and try the send command below
+
 ```
 # ~ % echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
 OK%
@@ -52,6 +54,8 @@ OK%
 ```   
 
 - `receive`
+
+- open a second terminal and run the following command to read a message of the queue
 
 ```
 # ~ % nc localhost 8006 
