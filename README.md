@@ -41,7 +41,7 @@ you should see the following message in the terminal:
 2024/08/09 16:41:18 Server started at :8006
 
 ```
-**sending && receiving a message**
+**sending a message**
 
 - after starting the keiji-bus process, open another terminal and try the send command below
 
@@ -51,21 +51,36 @@ you should see the following message in the terminal:
 # ~ % echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
 ```   
 **response**
-if all goes well you should see `OK` in your terminal or an error message. 
+
+- if all goes well you should see `OK` in your terminal or an error message. 
+
 ```
 OK%
 
 ```
-if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
+- if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
+
+**reading a message**
+
+**command**
 
 - open a second terminal and run the following command to read a message of the queue
 
 ```
 # ~ % nc localhost 8006 
+```
+
+**response**
+
+if there is a message to be read you should see the following.
+
+```
+
 {"cmd":"startTask","taskID":"12345"}%
 
 ```
 
+- if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
 
 ## Integration
 
