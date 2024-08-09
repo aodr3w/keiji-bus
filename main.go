@@ -44,7 +44,7 @@ func (s *Server) start(f func(net.Conn, *logging.Logger)) {
 
 func main() {
 	mq := core.NewMessageQueue(100)
-	lg, err := logging.NewFileLogger(paths.TCP_BUS_LOGS)
+	lg, err := logging.NewFileLogger(paths.BUS_LOGS)
 	if err != nil {
 		log.Fatal(err)
 	}
