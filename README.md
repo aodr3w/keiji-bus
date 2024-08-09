@@ -43,7 +43,7 @@ you should see the following message in the terminal:
 ```
 **sending a message**
 
-- after starting the keiji-bus process, open another terminal and try the send command below
+- after starting the keiji-bus process, open another terminal and try the command below
 
 **command**
 
@@ -57,7 +57,7 @@ you should see the following message in the terminal:
 ```
 OK%
 ```
-- if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
+- if nothing shows up in the terminal, check the logs in `$HOME/.keiji/logs/services/bus.log`
 
 **reading a message**
 
@@ -79,13 +79,11 @@ You should see some output like the following.
 
 ```
 
-- if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
+- if nothing shows up in the terminal, check the logs in `$HOME/.keiji/logs/services/bus.log`
 
 ## Integration
 
 keiji-bus enables interprocess communication in the keiji task scheduling system. it allows the main application to send task and system control messages to the scheduler in a decoupled and reliable manner
 
-License
+## License
 keiji-bus is open-source software licensed under the MIT License. See the LICENSE file for more details.
-
-This README now better reflects the functionality and usage of the keiji-bus based on the code provided. It provides a clear description of the system's components, how they work, and how users can interact with them.
