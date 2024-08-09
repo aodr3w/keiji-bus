@@ -43,17 +43,20 @@ you should see the following message in the terminal:
 ```
 **sending && receiving a message**
 
-- `send`
-
 - after starting the keiji-bus process, open another terminal and try the send command below
+
+**command**
 
 ```
 # ~ % echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
+```   
+**response**
+if all goes well you should see `OK` in your terminal or an error message. 
+```
 OK%
 
-```   
-
-- `receive`
+```
+if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
 
 - open a second terminal and run the following command to read a message of the queue
 
