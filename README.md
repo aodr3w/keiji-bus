@@ -52,7 +52,7 @@ you should see the following message in the terminal:
 ```   
 **response**
 
-- if all goes well you should see `OK` in your terminal or an error message. 
+- if all goes well you should see `OK` in your terminal and an error message otherwise. 
 
 ```
 OK%
@@ -63,7 +63,7 @@ OK%
 
 **command**
 
-- open a second terminal and run the following command to read a message of the queue
+- open a second terminal and run the following command to read a message off the queue
 
 ```
 # ~ % nc localhost 8006 
@@ -71,7 +71,7 @@ OK%
 
 **response**
 
-if there is a message to be read you should see the following.
+You should see some output like the following.
 
 ```
 
