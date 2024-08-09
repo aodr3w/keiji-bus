@@ -56,7 +56,6 @@ you should see the following message in the terminal:
 
 ```
 OK%
-
 ```
 - if nothing shows up in the terminal, check the logs in $HOME/.keiji/logs/services/bus.log
 
