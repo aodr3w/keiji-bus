@@ -52,7 +52,7 @@ keiji-bus
 **command**
 
 ```
-# ~ % echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
+echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
 ```   
 **output**
 
@@ -70,7 +70,7 @@ OK%
 - open a second terminal and run the following command to read a message off the queue
 
 ```
-# ~ % nc localhost 8006 
+nc localhost 8006 
 ```
 
 **output**
