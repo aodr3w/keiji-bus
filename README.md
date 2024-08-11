@@ -26,13 +26,20 @@ The message queue in keiji-bus is implemented as a buffered channel:
 
 ## installation
 
-`go install https://github.com/aodr3w/keiji-bus@latest`
+```
+go install https://github.com/aodr3w/keiji-bus@latest
+```
 
 ## Usage
 
-**command**: `keiji-bus`
+**command**
 
-you should see the following message in the terminal:
+```
+`keiji-bus`
+
+```
+
+**output**
 
 ```
 #% keiji-bus
@@ -50,7 +57,7 @@ you should see the following message in the terminal:
 ```
 # ~ % echo '{"cmd": "startTask", "taskID": "12345"}' | nc localhost 8005
 ```   
-**response**
+**output**
 
 - if all goes well you should see `OK` in your terminal and an error message otherwise. 
 
@@ -69,7 +76,7 @@ OK%
 # ~ % nc localhost 8006 
 ```
 
-**response**
+**output**
 
 You should see some output like the following.
 
