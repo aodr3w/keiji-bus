@@ -78,9 +78,7 @@ OK%
 You should see some output like the following.
 
 ```
-
 {"cmd":"startTask","taskID":"12345"}%
-
 ```
 
 - if nothing shows up in the terminal, check the logs in `$HOME/.keiji/logs/services/bus.log`
