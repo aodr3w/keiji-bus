@@ -27,7 +27,7 @@ The message queue in keiji-bus is implemented as a buffered channel:
 ## installation
 
 ```
-go install https://github.com/aodr3w/keiji-bus@latest
+go install github.com/aodr3w/keiji-bus@latest
 ```
 
 ## Usage
