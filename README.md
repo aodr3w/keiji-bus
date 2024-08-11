@@ -35,18 +35,15 @@ go install https://github.com/aodr3w/keiji-bus@latest
 **command**
 
 ```
-`keiji-bus`
-
+keiji-bus
 ```
 
 **output**
 
 ```
-#% keiji-bus
-2024/08/09 16:41:18 waiting for termination signal
-2024/08/09 16:41:18 Server started at :8005
-2024/08/09 16:41:18 Server started at :8006
-
+2024/08/10 16:41:18 waiting for termination signal
+2024/08/10 16:41:18 Server started at :8005
+2024/08/10 16:41:18 Server started at :8006
 ```
 **sending a message**
 
